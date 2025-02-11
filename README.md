@@ -11,5 +11,5 @@ A simple installer script that automatically sets up Git hooks to streamline you
 Run this command in your terminal:
 
 ```bash
-curl -sSf https://raw.githubusercontent.com/smg-real-estate/smg-git-hooks-public/main/install.sh | sh
+curl -sSf https://smg-real-estate.github.io/smg-git-hooks-public/install.sh | sh
 ```
