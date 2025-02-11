@@ -1,4 +1,4 @@
-HOOK_DIR=$(git config --local core.hooksPath || echo '.git/hooks') && \
+HOOK_DIR=$(git config --local core.hooksPath || echo '.githooks') && \
 echo "Installing in $HOOK_DIR..." && \
 mkdir -p "$HOOK_DIR"
 
@@ -6,3 +6,4 @@ url=$(curl -s https://api.github.com/repos/smg-real-estate/smg-git-hooks-public/
 
 curl -L "$url" > "$HOOK_DIR/post-checkout"
 chmod +x "$HOOK_DIR/post-checkout"
+[ "$HOOK_DIR" = ".githooks" ] && git config --local core.hooksPath .githooks || true
