@@ -5,6 +5,7 @@ A simple installer script that automatically sets up Git hooks to streamline you
 ## Prerequisites
 
 - Git repository initialized
+- curl
 
 ## Quick Install
 
