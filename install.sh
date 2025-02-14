@@ -1,4 +1,11 @@
+# Get the hooks path, defaulting to '.githooks' if not set
 HOOK_DIR=$(git config --local core.hooksPath || echo '.githooks') && \
+
+# If hooks path is '.husky/_', change it to just '.husky'
+if [[ "$HOOK_DIR" == ".husky/_" ]]; then
+    HOOK_DIR=".husky"
+fi
+
 echo "Installing in $HOOK_DIR..." && \
 mkdir -p "$HOOK_DIR"
 
