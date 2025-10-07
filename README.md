@@ -9,7 +9,7 @@ A simple installer script that automatically sets up Git hooks to streamline you
 
 ## Quick Install
 
-Run this command in your terminal:
+Run this command in your root workspace:
 
 ```bash
 curl -sSf https://smg-real-estate.github.io/smg-git-hooks-public/install.sh | sh
